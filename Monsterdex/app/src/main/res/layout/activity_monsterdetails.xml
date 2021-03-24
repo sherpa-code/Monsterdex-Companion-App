@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android=
+    "http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/backgroundvertical"/>
+
+    <TextView
+        android:id="@+id/monsterNameTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Crotone"
+        android:textSize="48sp"
+        android:textColor="#fff"
+        android:textStyle="bold|italic"
+
+        android:shadowColor="#000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="25"
+        android:textAllCaps="true"/>
+
+    <ImageView
+        android:id="@+id/monsterImageView"
+        android:layout_width="189dp"
+        android:layout_height="155dp"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/crotone"/>
+
+    <TableLayout
+        android:id="@+id/simpleTableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:id="@+id/firstRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:paddingHorizontal="35dip">
+
+            <TextView
+                android:id="@+id/numberLabelSimpleTextView"
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:background="#000"
+                android:fontFamily="@font/merchant_copy"
+                android:padding="8dip"
+                android:text="ID #"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/numberValueSimpleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#222"
+                android:fontFamily="@font/merchant_copy"
+                android:padding="8dip"
+                android:text="001"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:textStyle="bold|italic"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/secondRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingHorizontal="35dip">
+
+            <TextView
+                android:id="@+id/typeLabelSimpleTextView"
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:background="#A03CB1"
+                android:fontFamily="@font/merchant_copy"
+                android:padding="8dip"
+                android:text="Type"
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/typeValueSimpleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#222"
+                android:fontFamily="@font/merchant_copy"
+                android:padding="8dip"
+                android:text="Normal"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:textStyle="bold|italic"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/thirdRow"
+            android:layout_width="wrap_content"
+
+            android:layout_marginTop="5dp"
+            android:paddingHorizontal="35dip">
+
+            <TextView
+                android:id="@+id/attackLabelSimpleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FF0000"
+                android:fontFamily="@font/merchant_copy"
+                android:padding="8dip"
+                android:text="Attack"
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/attackValueSimpleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#222"
+                android:fontFamily="@font/merchant_copy"
+                android:padding="8dip"
+                android:text="550"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:textStyle="bold|italic"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/fourthRow"
+            android:layout_width="wrap_content"
+
+            android:layout_marginTop="5dp"
+            android:paddingHorizontal="35dip">
+
+            <TextView
+                android:id="@+id/defenseLabelSimpleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#3674BF"
+                android:fontFamily="@font/merchant_copy"
+                android:padding="8dip"
+                android:text="Defense"
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/defenseValueSimpleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#222"
+                android:fontFamily="@font/merchant_copy"
+                android:padding="8dip"
+                android:text="150"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:textStyle="bold|italic"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/fifthRow"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingHorizontal="35dip">
+
+            <TextView
+                android:id="@+id/speedLabelSimpleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#379311"
+                android:fontFamily="@font/merchant_copy"
+                android:padding="8dip"
+                android:text="Speed"
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/speedValueSimpleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#222"
+                android:fontFamily="@font/merchant_copy"
+                android:padding="8dip"
+                android:text="25"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:textStyle="bold|italic"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/sixthRow"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingHorizontal="35dip">
+
+            <TextView
+                android:id="@+id/specialLabelSimpleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#BFA521"
+                android:fontFamily="@font/merchant_copy"
+                android:padding="8dip"
+                android:text="Special"
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/specialValueSimpleTextView"
+                android:layout_width="169dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#222"
+                android:fontFamily="@font/merchant_copy"
+                android:padding="8dip"
+                android:text="Death Breath"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/seventhRow"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingHorizontal="35dip">
+
+            <TextView
+                android:id="@+id/specialTypeLabelSimpleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFBFA521"
+                android:fontFamily="@font/merchant_copy"
+                android:padding="8dip"
+                android:text="Special Type"
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/specialTypeValueSimpleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#222"
+                android:fontFamily="@font/merchant_copy"
+                android:padding="8dip"
+                android:text="Condition"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:textStyle="bold|italic"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/previousBtn"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerInParent="false"
+        android:textSize="25sp"
+        android:text="←"/>
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="340dp"
+        android:layout_centerInParent="false"
+        android:textSize="25sp"
+        android:text="→"/>
+
+</RelativeLayout>
